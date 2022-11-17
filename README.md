@@ -1,2 +1,2 @@
-# web-chat
+# WEB-CHAT
 Chatting application using WebSockets
