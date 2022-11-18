@@ -20,7 +20,7 @@ Tech stack used: React, MongoDB, Atlas, NodeJS, express
     #### SOCKET_PORT
 
 
-#### Start Client and Server
+## Start Client and Server
  ### npm run start
     This will Start the Server
 
