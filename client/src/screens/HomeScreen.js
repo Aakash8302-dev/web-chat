@@ -6,7 +6,8 @@ import io from "socket.io-client"
 import Chat from '../components/Chat'
 import LoginChat from '../components/LoginChat'
 
-const socket = io.connect(`http://127.0.0.1:3001`)
+const socket = io(`http://127.0.0.1:3001`)
+
 
 const style = {
   root:{
@@ -24,6 +25,7 @@ const HomeScreen = () => {
 
   const userLogin = useSelector((state) => state.user.login.value);
 
+
   const [room, setRoom] = useState("")
   const [userName, setUsername] = useState(userLogin ? userLogin.name : null)
   const [show, setShow] = useState("login")
@@ -36,6 +38,8 @@ const HomeScreen = () => {
 
   const joinRoom = () => {
     if(userName!== "" && room !== ""){
+        socket.auth = {token: userLogin.token}
+        socket.connect();
         socket.emit("join_room",room);
         setShow("chat")
     }
