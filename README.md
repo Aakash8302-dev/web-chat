@@ -21,7 +21,7 @@ Tech stack used: React, MongoDB, Atlas, NodeJS, express
 
 
 ## Start Client and Server
- ### npm run start
+ ### `npm run start`
     This will Start the Server
 
  ### `cd client` 
