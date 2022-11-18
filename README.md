@@ -18,3 +18,12 @@ Tech stack used: React, MongoDB, Atlas, NodeJS, express
     #### NODE_ENV
     #### JWT_SECRET
     #### SOCKET_PORT
+
+
+#### Start Client and Server
+ ### npm run start
+    This will Start the Server
+
+ ### `cd client` 
+ ### `npm start`
+    This command will Start the client application
